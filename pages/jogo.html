@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Pontos</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Páginas</li>
+          <li class="lista-menu__item">
+            <a href="/index.html" class="lista-menu__link">Página inicial</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Integrantes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="/pages/sobre.html" class="lista-menu__link">sobre</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="../pages/faq.html" class="lista-menu__link">FAQ</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="/pages/contato.html" class="lista-menu__link">Contato</a>
+          </li>
+        </ul>
+        <h1 class="container__titulo">EcoPoints</h1>
+      </div>
+
+      <ul class="opcoes">
+        <li class="opcoes__item">
+          <a href="/index.html" class="lista-menu__link">Página inicial</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Integrantes</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="/pages/sobre.html" class="opcoes__link">Sobre</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="../pages/faq.html" class="lista-menu__link">FAQ</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="/pages/contato.html" class="opcoes__link">Contato</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#" class="container__link">
+          <img
+            src="../img/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="jogo-layout">
+      <section class="banner">
+        <h2 class="banner__titulo">Ganhe EcoPoints 🌱</h2>
+        <p class="banner__texto">
+          Escolha uma ação sustentável e acumule pontos
+        </p>
+      </section>
+
+      <div class="jogo-linha">
+        <section class="card jogo-card">
+          <h2 class="descricao__titulo">Escolha uma ação</h2>
+
+          <select id="acao" class="seletor">
+            <option value="10">Usar ecobag (+10)</option>
+            <option value="20">Andar de bicicleta (+20)</option>
+            <option value="15">Reciclar lixo (+15)</option>
+            <option value="12">Economizar água (+12)</option>
+            <option value="18">Usar transporte público (+18)</option>
+          </select>
+
+          <button class="seletor-botao" onclick="adicionarPontos()">
+            Adicionar pontos
+          </button>
+
+          <h3>Pontos totais: <span id="pontos">0</span></h3>
+        </section>
+
+        <section class="card jogo-card">
+          <h2 class="descricao__titulo">Ranking</h2>
+          <ul id="ranking" class="lista-items">
+            <li class="item-lista">Você: 0 pontos</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <hr />
+    <footer class="rodape">
+      <p>© 2026 SoulUp - Um futuro mais sustentável</p>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

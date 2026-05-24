@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+<header class="cabecalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Páginas</li>
+          <li class="lista-menu__item">
+            <a href="/index.html" class="lista-menu__link">Página inicial</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="/pages/jogo.html" class="lista-menu__link">Jogo</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Integrantes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="/pages/faq.html" class="lista-menu__link">FAQ</a>
+          </li>
+        </ul>
+        <h1 class="container__titulo">EcoPoints</h1>
+      </div>
+
+      <ul class="opcoes">
+        <li class="opcoes__item">
+          <a href="/index.html" class="lista-menu__link">Página inicial</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="/pages/jogo.html" class="opcoes__link">Jogo</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Integrantes</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="/pages/faq.html" class="opcoes__link">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#" class="container__link">
+          <img
+            src="../img/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <h2 class="banner__titulo">Contato</h2>
+        <p class="banner__texto">Fale com a equipe do EcoPoints 🌱</p>
+      </section>
+      <div class="flex-container">
+        <div class="metade">
+        <section class="card">
+          <h2 class="descricao__titulo">Entre em contato</h2>
+
+          <form class="form-contato">
+            <label class="form-contato-etiqueta" for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              required
+            />
+
+            <label class="form-contato-etiqueta" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu email"
+              required
+            />
+
+            <label class="form-contato-etiqueta" for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Digite sua mensagem..."
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+        </div>
+        <div class="metade">
+        <section class="card">
+          <h2 class="descricao__titulo">Outras formas de contato</h2>
+          <p class="descricao__texto">Email: contato@ecopoints.com</p>
+          <p class="descricao__texto">Instagram: @ecopoints</p>
+          <p class="descricao__texto">Localização: São Paulo - Brasil</p>
+        </section>
+        </div>
+    </main>
+    <hr />
+    <footer class="rodape">
+      <p>© 2026 SoulUp - Um futuro mais sustentável</p>
+    </footer>
+  </body>
+</html>

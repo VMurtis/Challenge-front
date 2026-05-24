@@ -1,6 +1,7 @@
 # 🌱 EcoPoints
 
 Projeto web desenvolvido para incentivar práticas sustentáveis através de um sistema de pontuação gamificado.
+link do video: https://youtu.be/C6rd5JN34W0
 
 ## 🚀 Sobre o projeto
 
